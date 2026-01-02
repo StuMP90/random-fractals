@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Random Fractals
+Exec=random-fractals-gui
+Icon=random-fractals-gui
+Categories=Graphics;
+Terminal=false

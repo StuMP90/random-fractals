@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="34%" r="80%">
+      <stop offset="0%" stop-color="#2dd4ff"/>
+      <stop offset="45%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#0b1020"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="256" height="256" rx="44" fill="url(#bg)"/>
+
+  <!-- Mandelbrot-set silhouette (cardioid + main bulb) -->
+  <g filter="url(#glow)">
+    <path
+      d="M142 58
+         C118 58 98 78 98 102
+         C98 121 110 137 128 142
+         C113 147 102 160 102 176
+         C102 197 119 214 140 214
+         C167 214 186 190 186 162
+         C186 150 183 139 177 130
+         C188 123 196 111 196 97
+         C196 75 177 58 155 58
+         C150 58 146 58 142 58Z"
+      fill="#05070f"
+      opacity="0.92"/>
+    <circle cx="196" cy="97" r="18" fill="#05070f" opacity="0.92"/>
+  </g>
+
+  <!-- simple highlight edge -->
+  <path
+    d="M139 66
+       C121 66 106 81 106 99
+       C106 113 115 125 129 129"
+    fill="none" stroke="#e5f2ff" stroke-width="10" stroke-linecap="round" opacity="0.75"/>
+</svg>
