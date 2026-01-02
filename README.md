@@ -1,6 +1,8 @@
 # random-fractals
 A simple Rust GUI programme to test cross-platform compilation and packaging.
 
+Note: this is an AI-generated programme, built using Windsurf, to test cross-platform compilation and deployment.
+
 ## Project layout
 
 The GUI application lives in:
